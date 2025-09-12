@@ -1,0 +1,21 @@
+{
+  "name": "azure-ai-multiple-agents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx -r dotenv/config index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@azure/ai-agents": "^1.1.0",
+    "@azure/identity": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "dotenv": "^17.2.2",
+    "typescript": "^5.9.2"
+  }
+}
