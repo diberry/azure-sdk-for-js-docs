@@ -21,7 +21,7 @@
   "homepage": "https://github.com/azure-samples/azure-sdk-for-js-docs#readme",
   "type": "module",
   "workspaces": [
-    "samples/*"
+    "samples/foundry/*"
   ],
   "devDependencies": {
     "@eslint/css": "^0.11.0",
