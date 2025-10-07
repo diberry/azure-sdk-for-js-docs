@@ -64,5 +64,3 @@ async function listContainers() {
 
 // Call the function to list containers
 listContainers().catch(console.error);
-
-
