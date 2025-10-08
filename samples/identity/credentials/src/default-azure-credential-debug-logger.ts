@@ -36,7 +36,6 @@ const blobServiceClient = new BlobServiceClient(
 );
 // </DEFAULT_AZURE_CREDENTIAL_DEBUG>
 
-
 // Function to list containers
 async function listContainers() {
     try {

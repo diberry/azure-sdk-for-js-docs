@@ -39,7 +39,6 @@ const blobServiceClient = new BlobServiceClient(
 );
 // </CREDENTIAL_CHAIN_DEBUG>
 
-
 // Function to list containers
 async function listContainers() {
     try {
