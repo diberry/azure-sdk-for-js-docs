@@ -1,4 +1,5 @@
-// <CREDENTIAL_CHAIN_DEBUG
+// <CREDENTIAL_CHAIN_DEBUG>
+
 import { setLogLevel, AzureLogger } from "@azure/logger";
 import { BlobServiceClient } from "@azure/storage-blob";
 import { 
@@ -36,7 +37,8 @@ const blobServiceClient = new BlobServiceClient(
     `https://${storageAccountName}.blob.core.windows.net`,
     credential
 );
-// </CREDENTIAL_CHAIN_DEBUG
+// </CREDENTIAL_CHAIN_DEBUG>
+
 
 // Function to list containers
 async function listContainers() {
