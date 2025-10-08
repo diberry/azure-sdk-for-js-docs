@@ -25,7 +25,10 @@ if (!storageAccountName) {
     throw new Error("AZURE_STORAGE_ACCOUNT_NAME environment variable is required");
 }
 
-const credential = new DefaultAzureCredential();
+const credential = new DefaultAzureCredential({ 
+    requiredEnvVars: [ "AZURE_TOKEN_CREDENTIALS" ]
+});
+
 
 const blobServiceClient = new BlobServiceClient(
     `https://${storageAccountName}.blob.core.windows.net`,
