@@ -5,7 +5,8 @@ import {
     DefaultAzureCredential 
 } from "@azure/identity";
 
-// Constant for the Azure identity log prefix
+// Constant for the Azure Identity log prefix
+
 const AZURE_IDENTITY_LOG_PREFIX = "azure:identity";
 
 // override logging to output to console.log (default location is stderr)
