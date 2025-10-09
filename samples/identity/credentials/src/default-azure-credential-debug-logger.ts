@@ -1,9 +1,8 @@
 // <DEFAULT_AZURE_CREDENTIAL_DEBUG>
 import { setLogLevel, AzureLogger } from "@azure/logger";
 import { BlobServiceClient } from "@azure/storage-blob";
-import { 
-    DefaultAzureCredential 
-} from "@azure/identity";
+import { DefaultAzureCredential } from "@azure/identity";
+
 
 // Constant for the Azure Identity log prefix
 
