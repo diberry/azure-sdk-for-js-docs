@@ -1,0 +1,23 @@
+{
+  "name": "blob-paging",
+  "version": "1.0.0",
+  "main": "dist/blob-paging.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/blob-paging.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "List Azure Blob Storage blobs by page with DefaultAzureCredential.",
+  "dependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/storage-blob": "12.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
+

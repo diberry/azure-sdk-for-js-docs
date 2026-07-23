@@ -1,0 +1,23 @@
+{
+  "name": "upload-url-to-blob-poll-until-done",
+  "version": "1.0.0",
+  "main": "dist/upload-url-to-blob-poll-until-done.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/upload-url-to-blob-poll-until-done.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Copy files from URLs into Azure Blob Storage and wait for each long-running operation to finish.",
+  "dependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/storage-blob": "12.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
+
