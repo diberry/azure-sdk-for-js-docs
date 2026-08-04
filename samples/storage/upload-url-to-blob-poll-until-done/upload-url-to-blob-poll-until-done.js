@@ -1,4 +1,4 @@
-const { BlobServiceClient } = require("@azure/storage-blob");
+import { BlobServiceClient } from "@azure/storage-blob";
 
 const blobAccountConnectionString = "REPLACE-WITH-YOUR-STORAGE-CONNECTION-STRING";
 const blobAccountContainerName = `test-${Date.now().toString()}`;

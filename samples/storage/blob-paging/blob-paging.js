@@ -1,4 +1,4 @@
-const { BlobServiceClient } = require("@azure/storage-blob");
+import { BlobServiceClient } from "@azure/storage-blob";
 
 const blobAccountConnectionString = "REPLACE-WITH-YOUR-STORAGE-CONNECTION-STRING";
 const blobAccountContainerName = "REPLACE-WITH-YOUR-STORAGE-CONTAINER-NAME";
@@ -21,11 +21,11 @@ const list = async () => {
   do {
 
     // Get Page of Blobs
-    iterator = (continuationToken != "") 
+    const iterator = (continuationToken != "")
       ? containerClient.listBlobsFlat().byPage({ maxPageSize: pageSize, continuationToken }) 
       : containerClient.listBlobsFlat().byPage({ maxPageSize: pageSize });
     
-    page = (await iterator.next()).value;
+    const page = (await iterator.next()).value;
 
     // Display list
     if (page.segment?.blobItems) {
